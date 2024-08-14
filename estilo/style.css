@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(/fontes/BebasNeue.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/* Paleta de Cores
+    #84e1ad   
+    #237749   
+    #50f79b  
+    #0e4b2a
+    #0f9248   
+    #dbf3e600  
+    #2fa866  
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #84e1ad;   
+    --cor1: #237749;   
+    --cor2: #50f79b; 
+    --cor3: #0e4b2a;
+    --cor4: #0f9248;   
+    --cor5: #dbf3e600;  
+    --cor6: #2fa866;  
+
+    --font-padrao: 'Arial', 'Helvetica', 'sans-serif';
+    --font-android: 'Idroid', 'Franklin Gothic Medium', 'serif';
+    --font-destaque: 'Bebas Neue','Franklin Gothic Medium', 'serif';
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+header{
+    background-image: linear-gradient(180deg, #31af6a94, #0e4b2a);
+    min-height: 100px;
+}
+header h1{
+    font-family: var(--font-destaque);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 3px 2px #00000063;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-family: var(--font-padrao);
+    padding-bottom: 25px;
+    text-shadow: 1px 1px 8px #0000005e;
+}
+
+nav{
+    background-color: var(--cor3);
+    box-shadow: 0px 4px 7px 0px #00000054;
+    padding: 7px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    margin: 20px;
+    padding: 6px;
+    border-radius: 4px;
+    transition-duration: 0.7s;
+}
+
+nav a:hover{
+    background-color: var(--cor6);
+
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding-bottom: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 3px 4px 2px #0000005c;
+}
+
+main h1{
+    font-family: var(--font-android);
+    font-size: 2.0em;
+    text-shadow: 1px 3px 3px #00000042;
+    color: var(--cor3);
+    text-align: center;
+    padding-top: 40px;
+}
+
+main h2{
+    font-family: var(--font-android);
+    color: #0e4b2ae8;
+    font-size: 1.6em;
+    background-image: linear-gradient(to right, #84e1adc2, #84e1ad03);
+    margin: 0px 30px;
+    padding-left: 8px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 4px #00000070;
+}
+
+main p{
+    font-family: var(--font-padrao);
+    margin: 25px 30px 40px 30px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.6em;
+}
+
+p.lastP{
+    margin-bottom: 0px;
+}
+
+main strong{
+    color: var(--cor4);
+    font-size: 1.02em;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+main a:hover{
+    background-color: var(--cor3);
+    color: white;
+}
+a.ext::after{
+    content: '\1F517';
+}
+
+main img{
+    display: block;
+    margin: auto;
+    width: 94%;
+}
+main img.pq{
+    max-width: 300px;
+}
+
+main div.video{
+    position: relative;
+    background-color: var(--cor3);
+    height: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 53%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: #84e1ad8c;
+    margin: 40px 30px;
+    padding-bottom: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 4px 0px #00000038;
+}
+
+aside h3{
+    background-color: var(--cor2);
+    color: white;
+    text-indent: 25px;
+    font-family: var(--font-padrao);
+    font-size: 1.1em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0';
+    margin: 0px 30px;
+    line-height: 1.6em;
+}
+
+aside strong.extra{
+    color: #F77B4F;
+}
+
+footer{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    background-color: var(--cor3);
+    color: white;
+    margin-top: 60px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 1px;
+    border-radius: 2px;
+}
+
+footer a:hover{
+    color: black;
+    background-color: white;
+}
+
+footer strong::after{
+    content: '\1F4C1';
+}
